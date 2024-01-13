@@ -15,14 +15,14 @@ tasks:
     echo " * gp open /var/log/apache2/access.log";
     echo " * gp open /var/log/mysql/error.log";
 
-- name: Apache
-  command: >
-    apachectl start &&
-    multitail /var/log/apache2/access.log -I /var/log/apache2/error.log
+# - name: Apache
+#   command: >
+#     apachectl start &&
+#     multitail /var/log/apache2/access.log -I /var/log/apache2/error.log
 
-- name: MySQL
-  command: >
-    multitail /var/log/mysql/mysql.log -I /var/log/mysql/error.log
+# - name: MySQL
+#   command: >
+#     multitail /var/log/mysql/mysql.log -I /var/log/mysql/error.log
 # vscode:
 #   extensions:
 #     - felixfbecker.php-debug@1.14.12
