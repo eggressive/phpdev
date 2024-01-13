@@ -6,8 +6,8 @@ ports:
   onOpen: open-preview
 
 tasks:
-- name: MySQL
-  command: tail -f /var/log/mysql/error.log
+# - name: MySQL
+#   command: tail -f /var/log/mysql/error.log
 
 - name: Terminal
   command: >
