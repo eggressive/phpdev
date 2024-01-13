@@ -21,4 +21,4 @@ tasks:
 #     multitail /var/log/apache2/access.log -I /var/log/apache2/error.log
 
 - name: MySQL
-  command: multitail /var/log/mysql/mysql.log -I /var/log/mysql/error.log
+  command: tail -f /var/log/mysql/error.log
