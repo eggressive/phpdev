@@ -6,6 +6,9 @@ ports:
   onOpen: open-preview
 
 tasks:
+- name: MySQL
+  command: tail -f /var/log/mysql/error.log
+
 - name: Terminal
   command: >
     echo "";
@@ -19,6 +22,3 @@ tasks:
 #   command: >
 #     apachectl start &&
 #     multitail /var/log/apache2/access.log -I /var/log/apache2/error.log
-
-- name: MySQL
-  command: tail -f /var/log/mysql/error.log
